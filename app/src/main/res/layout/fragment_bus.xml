@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.BusFragment">
+
+    <include layout="@layout/top_navigation_bar"
+        android:id="@+id/bus_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_gravity="center_horizontal"
+            android:text="도봉01"
+            android:textSize="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="#6dcee5"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="0dp"
+                android:background="@drawable/stroke"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_height="match_parent"
+                android:text="경기도장학관"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="첫 버스"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:id="@+id/gFirstTime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/stroke"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_height="match_parent"
+                        android:text="다음 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분"
+                        android:layout_weight="2"
+                        android:id="@+id/gSecondTime"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/stroke"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="창동역"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_height="match_parent"
+                        android:text="첫 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분"
+                        android:layout_weight="2"
+                        android:id="@+id/sFirstTime"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_height="match_parent"
+                        android:text="다음 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분"
+                        android:layout_weight="2"
+                        android:id="@+id/sSecondTime"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_gravity="center_horizontal"
+            android:text="도봉02"
+            android:textSize="20dp"
+            android:background="#b8c5f9"
+            android:gravity="center_horizontal|center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+
+                android:background="@drawable/stroke"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="경기도장학관"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="첫 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분"
+                        android:layout_weight="2"
+                        android:id="@+id/gFirstTime2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="다음 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분"
+                        android:layout_weight="2"
+                        android:id="@+id/gSecondTime2"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/stroke"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="수유역"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="첫 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:id="@+id/sFirstTime2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/stroke"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="다음 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분"
+                        android:layout_weight="2"
+                        android:id="@+id/sSecondTime2"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:id="@+id/title"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="도봉03"
+            android:textSize="20dp"
+            android:background="#dfc0e3"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+
+                android:background="@drawable/stroke"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="환승장,기숙사"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="첫 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분"
+                        android:layout_weight="2"
+                        android:id="@+id/gFirstTime3"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="다음 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분"
+                        android:layout_weight="2"
+                        android:id="@+id/gSecondTime3"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+
+                android:background="@drawable/stroke"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="수유역"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:background="@drawable/stroke"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="첫 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분"
+                        android:layout_weight="2"
+                        android:id="@+id/sFirstTime3"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="다음 버스"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:background="@drawable/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="0분"
+                        android:layout_weight="2"
+                        android:id="@+id/sSecondTime3"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

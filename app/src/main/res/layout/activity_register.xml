@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/background_image"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:maxLength="15"
+                android:id="@+id/register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/login_user"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="이름"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#d7d9de"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:maxLength="20"
+                    android:id="@+id/register_NickName"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/register_anonymous"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="별명"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColorHint="#d7d9de"
+                    android:textSize="15dp" />
+                <Button
+                    android:id="@+id/register_existCheck_btn"
+                    android:layout_width="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border"
+                    android:text="중복 확인"
+                    android:textSize="13dp"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"/>
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/register_email"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="이메일 주소"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#d7d9de"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"/>
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/login_lock"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#d7d9de"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"/>
+            <EditText
+                android:id="@+id/register_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/login_lock"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#d7d9de"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"/>
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/register_phone"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="핸드폰 번호 (ex.01012345678)"
+                android:maxLength="11"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#d7d9de"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db"/>
+
+            <Button
+                android:id="@+id/register_signup_btn"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/background_login_btn"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="회원 가입"
+                android:textAllCaps="false"
+                android:textColor="#1DC5FD"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/register_cancel_btn"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_cancel_btn"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="취소"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image"
+    tools:context="org.androidtown.dormitory.activities.SleepWriteActivity">
+
+    <include layout="@layout/top_navigation_bar"
+        android:id="@+id/sleep_write_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:maxLength="15"
+                android:id="@+id/sleep_write_name"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/sleep_write_edit_text"
+                android:ems="10"
+                android:hint="이름"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColorHint="#66000000"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <EditText
+                android:maxLength="15"
+                android:id="@+id/sleep_write_building"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sleep_write_edit_text"
+                android:ems="10"
+                android:hint="건물"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColorHint="#66000000"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <EditText
+                android:maxLength="15"
+                android:id="@+id/sleep_write_building_number"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sleep_write_edit_text"
+                android:ems="10"
+                android:hint="호수"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColorHint="#66000000"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <EditText
+                android:maxLength="15"
+                android:id="@+id/sleep_write_from"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sleep_write_edit_text"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="none"
+                android:hint="시작일"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColorHint="#66000000"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <EditText
+                android:maxLength="15"
+                android:id="@+id/sleep_write_to"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sleep_write_edit_text"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="none"
+                android:hint="도착일"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColorHint="#66000000"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <EditText
+                android:maxLength="15"
+                android:id="@+id/sleep_write_destination"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sleep_write_edit_text"
+                android:ems="10"
+                android:hint="행선지"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColorHint="#66000000"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <EditText
+                android:maxLength="15"
+                android:id="@+id/sleep_write_reason"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sleep_write_edit_text"
+                android:ems="10"
+                android:hint="사유"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColorHint="#66000000"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sleep_write_done_button"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sleep_write_edit_button"
+                android:padding="10dp"
+                android:text="외박 신청"
+                android:textColor="#ffffff"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

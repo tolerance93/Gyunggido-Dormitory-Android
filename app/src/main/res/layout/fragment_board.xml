@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.BoardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/top_navigation_bar"
+        android:id="@+id/board_toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/board_notice_button"
+            android:text="공지사항"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/board_buttons"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/board_promotion_button"
+            android:text="홍보 게시판"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/board_buttons"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/board_free_button"
+            android:layout_width="match_parent"
+            android:text="자유게시판"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_height="0dp"
+            android:background="@drawable/board_buttons"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

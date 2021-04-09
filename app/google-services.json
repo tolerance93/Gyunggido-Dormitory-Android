@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "460335603489",
+    "firebase_url": "https://gyunggidodormitory.firebaseio.com",
+    "project_id": "gyunggidodormitory",
+    "storage_bucket": "gyunggidodormitory.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460335603489:android:da6b066c6162e005",
+        "android_client_info": {
+          "package_name": "org.androidtown.dormitory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460335603489-f4uegigp5402tb2jbqu6molvjs1hh9hl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.androidtown.dormitory",
+            "certificate_hash": "169aba5602c997356de33b6aa1f49c86e28954e8"
+          }
+        },
+        {
+          "client_id": "460335603489-qrv7jq56kuq61rpnbah0p0lag7cuakem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_IXcaN-gdHh29HkToKGM7AROG6QfTv1Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460335603489-qrv7jq56kuq61rpnbah0p0lag7cuakem.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "460335603489-al5mb73vrmf5bubkdnf4vrpglsdjrign.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tolerance.Dormitory"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460335603489:android:f41a5664b342d48d",
+        "android_client_info": {
+          "package_name": "org.androidtown.prototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460335603489-ub5kkc5v8qeptffhqp1bm6tsjf2et1pr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.androidtown.prototype",
+            "certificate_hash": "169aba5602c997356de33b6aa1f49c86e28954e8"
+          }
+        },
+        {
+          "client_id": "460335603489-qrv7jq56kuq61rpnbah0p0lag7cuakem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_IXcaN-gdHh29HkToKGM7AROG6QfTv1Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460335603489-qrv7jq56kuq61rpnbah0p0lag7cuakem.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "460335603489-al5mb73vrmf5bubkdnf4vrpglsdjrign.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tolerance.Dormitory"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

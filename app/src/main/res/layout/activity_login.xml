@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center"
+    android:background="@drawable/launch_image">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:drawableLeft="@drawable/register_email"
+            android:hint="이메일 주소"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColorHint="#d7d9de"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:drawableLeft="@drawable/login_lock"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColorHint="#d7d9de"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/login_login_btn"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_login_btn"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="로그인"
+                android:textAllCaps="false"
+                android:textColor="#1DC5FD"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/login_signup_btn"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_signup_btn"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="회원 가입"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <!--<TextView-->
+                <!--android:textSize="12dp"-->
+                <!--android:id="@+id/login_forget"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="비밀번호를 잊어버리셨나요?"-->
+                <!--style="@style/Base.TextAppearance.AppCompat.Body2"-->
+                <!--android:textColor="#fff"-->
+                <!--android:padding="16dp"-->
+                <!--android:clickable="true"-->
+                <!--android:layout_marginBottom="0dp"/>-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

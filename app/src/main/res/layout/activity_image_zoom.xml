@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    android:id="@+id/image_zoom_layout"
+    tools:context="org.androidtown.dormitory.activities.ImageZoomActivity">
+    <include layout="@layout/top_navigation_bar"
+        android:id="@+id/zoom_image_toolbar"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:padding="10dp"
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

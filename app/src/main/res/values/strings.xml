@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dormitory</string>
+    <string name="nav_dish">식단표</string>
+    <string name="nav_bus">버스</string>
+    <string name="nav_sleep">외박 신청</string>
+    <string name="nav_repair">수리 요청</string>
+    <string name="nav_board">게시판</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
